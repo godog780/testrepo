@@ -18,4 +18,4 @@ ps augx | grep "cado-nfs-client.py" | grep -v "grep" | awk '{print $2}' | xargs 
 #screen -ls | grep cadocli_ | grep -E '\s+[0-9]+\.' | awk -F ' ' '{print $1}' | while read s; do screen -XS $s quit; done
 #screen -dmS cadocli_01 ./cadocli $cado_path 192.168.0.4 24242 29291 6 "/tmp/$(uuidgen)" $HOSTNAME
 #screen -dmS cadocli_02 ./cadocli $cado_path 192.168.0.5 24242 29291 5 "/tmp/$(uuidgen)" $HOSTNAME
-#screen -dmS cadocli_03 ./cadocli $cado_path 192.168.0.6 24242 29291 5 "/tmp/$(uuidgen)" $HOSTNAME
+screen -dmS cadocli_03 ./cadocli $cado_path 192.168.0.6 24242 29291 5 "/tmp/$(uuidgen)" $HOSTNAME
